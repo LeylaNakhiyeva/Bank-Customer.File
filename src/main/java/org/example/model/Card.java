@@ -46,6 +46,6 @@ public class Card {
                 "customerNo=" + customerNo +
                 ", cardNumber=" + cardNumber +
                 ", currency=" + currency +
-                '}' +"\n";
+                '}';
     }
 }
