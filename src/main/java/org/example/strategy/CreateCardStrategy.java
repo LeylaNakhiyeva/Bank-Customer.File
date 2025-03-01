@@ -25,10 +25,10 @@ public class CreateCardStrategy implements MenuStrategy {
                     System.out.println("Select :");
                     int option = scanner.nextInt();
                     CurrencyEnum currency = CurrencyEnum.getCurrencyByValue(option);
+                    double balance = 100;
 
-                    Card card = new Card(customerNo, cardNumber, currency);
-                    List<Card> cards = new ArrayList<>();
-                    cards.add(card);
+                    Card card = new Card(customerNo, cardNumber, currency, balance );
+
                     customer.getCards().add(card);
                 });
     }

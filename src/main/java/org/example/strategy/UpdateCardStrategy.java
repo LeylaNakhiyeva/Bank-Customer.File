@@ -16,7 +16,7 @@ public class UpdateCardStrategy implements MenuStrategy {
         System.out.print("Enter card number: ");
         long cardNumber = sc.nextLong();
 
-       Bank.customers.stream().forEach(customer -> {
+       Bank.customers.forEach(customer -> {
            customer.getCards().stream()
                    .filter(card -> card.getCardNumber().equals(cardNumber))
                    .forEach(card -> {
