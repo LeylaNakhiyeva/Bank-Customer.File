@@ -17,10 +17,14 @@ public class Customer implements Serializable {
     private String surname;
     private List<Card> cards = new ArrayList<>();
 
-    public Customer(Integer customerNo, String name, String surname) {
+    public Customer(Integer customerNo, String name, String surname){
         this.customerNo = customerNo;
         this.name = name;
         this.surname = surname;
     }
 
+@Override
+    public String toString(){
+    return "customerNo: "+customerNo+"     name: "+name+"      surname: "+surname;
+}
 }
